@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardForm = document.getElementById('cardForm');
     const modal = document.getElementById('modal');
     const certificateContent = document.getElementById('certificateContent');
-    const closeModal = document.querySelector('.close');
+    const closeModal = document.querySelector('close');
   
     // Hide the modal initially
     modal.style.display = 'none';
@@ -41,8 +41,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.('', function () {
-      
-    });
+    closeModal.onclick = function () {
+      modal.style.display = 'none';
+    };
+
+    this.onclick
   });
   
