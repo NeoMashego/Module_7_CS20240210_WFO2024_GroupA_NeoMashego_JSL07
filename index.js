@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
-      const imgLogo = new Image(200, 300);
+      const imgLogo = new Image();
       imgLogo.src = "logo.png"
+      imgLogo.id = "#imgLogo";
+      imgLogo.alt = "CodeSpace Logo";
       document.getElementById('certificateContent').appendChild(imgLogo);
   
       // 🚨 Generate certificate content dynamically
