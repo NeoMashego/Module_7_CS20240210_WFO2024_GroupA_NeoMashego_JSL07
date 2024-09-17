@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
+
+      const imgLogo = new Image(200, 300);
+      imgLogo.src = "logo.png"
+      document.getElementById('certificateContent').appendChild(imgLogo);
   
       // 🚨 Generate certificate content dynamically
       certificateContent.innerHTML = `
@@ -33,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <h3>${personalMessage}</h3>
       <p>with legendary perserverance and world-class bad-assery for never giving up 🏆</p>
       <h4>${courseName}</h4>
+      <${imgLogo}>
     `;
     
       //  Display the modal
@@ -45,10 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     //  🚨 Close the modal when the close button is clicked
-    closeModal.onclick = function () {
-      modal.style.display = 'none';
-    };
+    //closeModal.onclick = function () { modal.style.display = 'none';};
 
-    this.onclick
   });
   
