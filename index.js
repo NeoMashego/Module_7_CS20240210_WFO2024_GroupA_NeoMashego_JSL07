@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>This is to certify that</p>
       <h3>${studentName}</h3>
       <p>has almost completed the</p>
-      <h3>${personalMessage}</h3>
-      <p>with legendary perserverance and world-class bad-assery for never giving up 🏆</p>
       <h4>${courseName}</h4>
+      <p>with legendary perserverance and world-class bad-assery for never giving up 🏆</p>
       <${imgLogo}>
+      <p>${personalMessage}</p>
     `;
     
       //  Display the modal
