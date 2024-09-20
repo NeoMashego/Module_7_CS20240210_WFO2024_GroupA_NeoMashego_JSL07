@@ -23,12 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
-
-      const imgLogo = new Image();
-      imgLogo.src = "logo.png"
-      imgLogo.id = "#imgLogo";
-      imgLogo.alt = "CodeSpace Logo";
-      document.getElementById('certificateContent').appendChild(imgLogo);
   
       // 🚨 Generate certificate content dynamically
       certificateContent.innerHTML = `
@@ -38,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <p>has almost completed the</p>
       <h4>${courseName}</h4>
       <p>with legendary perserverance and world-class bad-assery for never giving up 🏆</p>
-      <${imgLogo}>
+      <img src="logo.png" width="300" height="80">
       <p>${personalMessage}</p>
     `;
     
